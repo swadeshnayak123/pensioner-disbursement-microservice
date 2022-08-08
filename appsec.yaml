@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/pms-pst-disburse-taskdef:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/swadesh-pen-disbursement-task:1""
         LoadBalancerInfo:
-          ContainerName: "pst-processdisburse-container"
+          ContainerName: "swadesh-pens-disbursement-cluster"
           ContainerPort: "8083"
         PlatformVersion: "LATEST"
