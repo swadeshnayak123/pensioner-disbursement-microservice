@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 
-@FeignClient(name="auth-service",url = "http://13.235.87.33:8081/auth")
+@FeignClient(name="auth-service",url = "http://65.0.80.86:8081/auth")
 public interface AuthorizationServiceClient {
 	
 	@PostMapping(value = "/authorize")
